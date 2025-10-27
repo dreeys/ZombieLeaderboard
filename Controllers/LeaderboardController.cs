@@ -39,5 +39,12 @@ namespace ZombieLeaderboard.Controllers
             await _context.SaveChangesAsync();
             return Ok(entry);
         }
+
+        public async Task<IActionResult> ResetLeaderboard()
+        {
+            _context.Leaderboard.RemoveRange(_context.Leaderboard);
+            await _context.SaveChangesAsync();
+            return Ok("Leaderboard reset successfully!");
+        }
     }
 }
