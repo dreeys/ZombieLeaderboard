@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllers();
 builder.Services.AddDbContext<GameDbContext>(opt =>
-    opt.UseSqlite("Data Source=leaderboard.db"));
+    opt.UseSqlite("Data Source=/tmp/leaderboard.db"));
 
 // Swagger/OpenAPI
 builder.Services.AddEndpointsApiExplorer();
