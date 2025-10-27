@@ -20,7 +20,13 @@ app.UseSwaggerUI();
 
 app.UseHttpsRedirection();
 app.UseAuthorization();
-
 app.MapControllers();
+
+// ✅ Skapa DB vid uppstart
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<GameDbContext>();
+    db.Database.EnsureCreated();
+}
 
 app.Run();
