@@ -5,9 +5,8 @@ namespace ZombieLeaderboard.Data
 {
     public class GameDbContext : DbContext
     {
-        public GameDbContext(DbContextOptions<GameDbContext> options)
-            : base(options) { }
+        public GameDbContext(DbContextOptions<GameDbContext> options) : base(options) { }
 
-        public DbSet<LeaderboardEntry> Leaderboard => Set<LeaderboardEntry>();
+        public DbSet<LeaderboardEntry> Leaderboard { get; set; }
     }
 }
