@@ -129,10 +129,10 @@ C:\Users\Kevin\Desktop\coding\ZombieLeaderboardAPI\ZombieLeaderboardAPI\obj\Debu
 C:\Users\Kevin\Desktop\coding\ZombieLeaderboardAPI\ZombieLeaderboardAPI\obj\Debug\net8.0\staticwebassets.build.json.cache
 C:\Users\Kevin\Desktop\coding\ZombieLeaderboardAPI\ZombieLeaderboardAPI\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\Kevin\Desktop\coding\ZombieLeaderboardAPI\ZombieLeaderboardAPI\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-C:\Users\Kevin\Desktop\coding\ZombieLeaderboardAPI\ZombieLeaderboardAPI\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\Kevin\Desktop\coding\ZombieLeaderboardAPI\ZombieLeaderboardAPI\obj\Debug\net8.0\ZombieLe.C111450D.Up2Date
 C:\Users\Kevin\Desktop\coding\ZombieLeaderboardAPI\ZombieLeaderboardAPI\obj\Debug\net8.0\ZombieLeaderboardAPI.dll
 C:\Users\Kevin\Desktop\coding\ZombieLeaderboardAPI\ZombieLeaderboardAPI\obj\Debug\net8.0\refint\ZombieLeaderboardAPI.dll
 C:\Users\Kevin\Desktop\coding\ZombieLeaderboardAPI\ZombieLeaderboardAPI\obj\Debug\net8.0\ZombieLeaderboardAPI.pdb
 C:\Users\Kevin\Desktop\coding\ZombieLeaderboardAPI\ZombieLeaderboardAPI\obj\Debug\net8.0\ZombieLeaderboardAPI.genruntimeconfig.cache
 C:\Users\Kevin\Desktop\coding\ZombieLeaderboardAPI\ZombieLeaderboardAPI\obj\Debug\net8.0\ref\ZombieLeaderboardAPI.dll
+C:\Users\Kevin\Desktop\coding\ZombieLeaderboardAPI\ZombieLeaderboardAPI\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

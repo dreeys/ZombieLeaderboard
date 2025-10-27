@@ -1,12 +1,11 @@
-﻿
+﻿using System;
 using System.ComponentModel.DataAnnotations;
-using System.Text.Json.Serialization;
 
 namespace ZombieLeaderboard.Models
 {
     public class LeaderboardEntry
     {
-        [Key] 
+        [Key]                         
         public int Id { get; set; }
 
         [Required]
@@ -15,5 +14,5 @@ namespace ZombieLeaderboard.Models
         public int Score { get; set; }
 
         public DateTime Date { get; set; } = DateTime.UtcNow;
-    }   
+    }
 }

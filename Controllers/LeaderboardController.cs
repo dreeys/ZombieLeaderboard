@@ -41,7 +41,7 @@ namespace ZombieLeaderboard.Controllers
         }
 
 
-
+        [HttpDelete]
         public async Task<IActionResult> ResetLeaderboard()
         {
             _context.Leaderboard.RemoveRange(_context.Leaderboard);

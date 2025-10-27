@@ -5,29 +5,33 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllers();
-builder.Services.AddDbContext<GameDbContext>(opt =>
-    opt.UseSqlite("Data Source=/tmp/leaderboard.db"));
-
-// Swagger/OpenAPI
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// Register DbContext for SQLite
+builder.Services.AddDbContext<GameDbContext>(options =>
+    options.UseSqlite("Data Source=leaderboard.db"));
+
 var app = builder.Build();
 
-// ✅ Always enable Swagger (even in Production)
-app.UseSwagger();
-app.UseSwaggerUI();
+// ✅ Optional: recreate DB only once for testing
+// Comment out the EnsureDeleted() line after first run
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<GameDbContext>();
+
+    // db.Database.EnsureDeleted();   // ❌ uncomment ONLY if you want to reset
+    db.Database.EnsureCreated();       // ✅ creates if not exists
+}
+
+// Configure pipeline
+if (app.Environment.IsDevelopment() || app.Environment.IsProduction())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
 
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
-
-// Skapa DB vid uppstart
-using (var scope = app.Services.CreateScope())
-{
-    var db = scope.ServiceProvider.GetRequiredService<GameDbContext>();
-    db.Database.EnsureDeleted();  // 🧹 Tar bort gammal databas
-    db.Database.EnsureCreated();  // 🆕 Skapar ny med rätt schema
-}
-
 app.Run();
