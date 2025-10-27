@@ -40,6 +40,8 @@ namespace ZombieLeaderboard.Controllers
             return Ok(entry);
         }
 
+
+
         public async Task<IActionResult> ResetLeaderboard()
         {
             _context.Leaderboard.RemoveRange(_context.Leaderboard);

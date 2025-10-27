@@ -26,7 +26,8 @@ app.MapControllers();
 using (var scope = app.Services.CreateScope())
 {
     var db = scope.ServiceProvider.GetRequiredService<GameDbContext>();
-    db.Database.EnsureCreated();
+    db.Database.EnsureDeleted();  // 🧹 Tar bort gammal databas
+    db.Database.EnsureCreated();  // 🆕 Skapar ny med rätt schema
 }
 
 app.Run();
