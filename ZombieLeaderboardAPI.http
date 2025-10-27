@@ -1,0 +1,6 @@
+@ZombieLeaderboardAPI_HostAddress = http://localhost:5043
+
+GET {{ZombieLeaderboardAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
