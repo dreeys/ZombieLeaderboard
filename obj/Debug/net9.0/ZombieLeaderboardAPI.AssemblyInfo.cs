@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ZombieLeaderboardAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4af3bf60d49666a91b28e6c931b7ea8fbeedec66")]
 [assembly: System.Reflection.AssemblyProductAttribute("ZombieLeaderboardAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ZombieLeaderboardAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
